@@ -9,3 +9,5 @@ To build the React/Redux version run `npm run-script build-react-redux`.
 Twiddle the `src` in the `script` tag in `index.html` to point to either `dist/index-react.js` or `dist/index-react-redux.js`, depending on which one you want.
 
 Then open `index.html` in something that can serve it. `npx http-server .` for example.
+
+The React version is complete, the React/Redux version is incomplete.
