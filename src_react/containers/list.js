@@ -13,7 +13,11 @@ class List extends Component {
                     doneness={task.doneness}
                     text={task.text}
                     key={task.text}
+                    delete_available={task.delete_available}
                     onItemClick={this.props.onItemClick(task)}
+                    onItemMouseEnter={this.props.onItemMouseEnter(task)}
+                    onItemMouseLeave={this.props.onItemMouseLeave(task)}
+                    onItemClickDelete={this.props.onItemClickDelete(task)}
                 />
             );
             i += 1;

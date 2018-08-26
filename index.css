@@ -46,6 +46,7 @@
     border:1px solid black;
     margin-right:10px;
     vertical-align: bottom;
+    cursor: pointer;
 }
 .item {
     display: inline-block;
@@ -63,10 +64,21 @@
     transform: translate(0, -15px);
     cursor: pointer;
 }
+.delete-container {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 10px;
+    font-size:32px;
+    color: red;
+    position:absolute;
+    transform: translate(0, -8px);
+}
 .adder {
+    display:inline;
     font-size: 18px;
     font-family: Roboto, sans-serif;
-    margin-top:10px;
+    background: lightsteelblue;
+    border-radius:5px;
 }
 .adder-plus-button {
     display: inline-block;
@@ -76,7 +88,6 @@
     color: white;
     width: 50px;
     vertical-align: bottom;
-    height: 1em;
     border-radius:10px 0 0 10px;
     cursor: pointer;
     text-align: center;
@@ -91,7 +102,13 @@
 .adder-textarea {
     display: inline-block;
     resize: none;
-    vertical-align:bottom;
-    height: auto;
-    width:700px;
+    vertical-align:top;
+    width:auto;
+    font-size:18px;
+    font-family: Roboto, sans-serif;
+    overflow: hidden;
+}
+.adder-container {
+    display:block;
+    margin-top:5px;
 }
