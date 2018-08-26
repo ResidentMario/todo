@@ -1,0 +1,97 @@
+.app {
+    width: 800px;
+    margin:auto;
+}
+.tab {
+    display: inline-block;
+    width:100px;
+    margin-right:10px;
+    font-size: 18px;
+    font-family: Roboto Light, sans-serif;
+    background: steelblue;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.tab.active {
+    background: steelblue;
+}
+.tab.inactive {
+    background: lightsteelblue;
+}
+.tab:hover {
+    background: cornflowerblue;
+}
+.tab:active {
+    background: #1f66e5;
+}
+.list-container {
+    background:#eee;
+    padding:10px;
+    border-radius:0 10px 10px 10px;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+.item-container {
+    margin-bottom:10px;
+}
+.item-box {
+    display: inline-block;
+    width:18px;
+    height:18px;
+    border:1px solid black;
+    margin-right:10px;
+    vertical-align: bottom;
+}
+.item {
+    display: inline-block;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+}
+.item-box.done {
+    font-size: 36px;
+}
+.item.done {
+    text-decoration-line: line-through;
+}
+.item-box-contents {
+    transform: translate(0, -15px);
+    cursor: pointer;
+}
+.adder {
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    margin-top:10px;
+}
+.adder-plus-button {
+    display: inline-block;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    background: lightsteelblue;
+    color: white;
+    width: 50px;
+    vertical-align: bottom;
+    height: 1em;
+    border-radius:10px 0 0 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.adder-plus-button:hover {
+    background:cornflowerblue;
+    vertical-align:bottom;
+}
+.adder-plus-button:active {
+    background: darkblue;
+}
+.adder-textarea {
+    display: inline-block;
+    resize: none;
+    vertical-align:bottom;
+    height: auto;
+    width:700px;
+}

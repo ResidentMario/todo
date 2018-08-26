@@ -1,0 +1,31 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "A TODO application implemented in both React and React+Redux, to compare and contrast.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-react": "npx browserify -t [babelify --presets [ react env ] ] src_react/index-react.js -o dist/index-react.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ResidentMario/todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ResidentMario/todo/issues"
+  },
+  "homepage": "https://github.com/ResidentMario/todo#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2"
+  }
+}
