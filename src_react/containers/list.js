@@ -13,9 +13,10 @@ class List extends Component {
                     doneness={task.doneness}
                     text={task.text}
                     key={task.text}
-                    onItemClick={this.props.onItemClick(i)}
+                    onItemClick={this.props.onItemClick(task)}
                 />
             );
+            i += 1;
         }
 
         return <div className={"list-container"}>

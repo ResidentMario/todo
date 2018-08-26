@@ -13,7 +13,7 @@ class Item extends Component {
                     { item_box_contents }
                 </div>
             </div>
-            <div className={"item " + this.props.doneness} onClick={this.props.onItemClick}>
+            <div className={"item " + this.props.doneness} onClick={ this.props.onItemClick }>
                 {this.props.text}
             </div>
         </div>;

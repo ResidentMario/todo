@@ -38,16 +38,16 @@ class App extends Component {
             }
         };
 
-        // TODO: fix the closure behavior here.
-        const onItemClick = (item_pos) => {
+        const onItemClick = (task) => {
             return () => {
-                let item = this.state.todos[item_pos];
-                item['doneness'] = (item['doneness'] === 'done') ? 'not_done': 'done';
-
-                console.log(this.state.todos);
-
+                let task_index = this.state.todos.indexOf(task);
+                let new_state = Object.assign({}, this.state);
+                console.log(new_state);
+                new_state.todos[task_index].doneness = (this.state.todos[task_index].doneness === 'done') ? 'not_done' : 'done';
+                console.log(new_state);
                 this.setState({
-                    'todos': [...this.state.todos.slice(0, item_pos), item, ...this.state.todos.slice(item_pos + 1)]
+                    'todos': new_state.todos,
+                    'activation_states': this.state.activation_states
                 });
             };
         };
