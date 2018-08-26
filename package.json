@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-react": "npx browserify -t [babelify --presets [ react env ] ] src_react/index-react.js -o dist/index-react.js"
+    "build-react": "npx browserify -t [babelify --presets [ react env ] ] src_react/index-react.js -o dist/index-react.js",
+    "build-react-redux": "npx browserify -t [babelify --presets [react env ] ] src_react_redux/index-react-redux.js -o dist/index-react-redux.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
